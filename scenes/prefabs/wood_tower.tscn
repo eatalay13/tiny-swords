@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://sxv5exaf84ng"]
+
+[ext_resource type="Texture2D" uid="uid://doa5qsqgtfs0r" path="res://art/Factions/Goblins/Buildings/Wood_Tower/Wood_Tower_Blue.png" id="1_4hqjx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ovjgf"]
+atlas = ExtResource("1_4hqjx")
+region = Rect2(0, 0, 256, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ev04"]
+atlas = ExtResource("1_4hqjx")
+region = Rect2(256, 0, 256, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bu0gu"]
+atlas = ExtResource("1_4hqjx")
+region = Rect2(512, 0, 256, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jwb7f"]
+atlas = ExtResource("1_4hqjx")
+region = Rect2(768, 0, 256, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ujecb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovjgf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ev04")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bu0gu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jwb7f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="WoodTower" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ujecb")
+autoplay = "default"
+frame_progress = 0.323149
