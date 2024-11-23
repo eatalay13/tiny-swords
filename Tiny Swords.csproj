@@ -6,4 +6,7 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>TinySwords</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="scripts\Prefabs\" />
+  </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=4 uid="uid://bjigppl2u6bsr"]
+[gd_scene load_steps=30 format=4 uid="uid://bjigppl2u6bsr"]
 
 [ext_resource type="PackedScene" uid="uid://v782qpxpcrkl" path="res://scenes/prefabs/tree.tscn" id="1_72ix8"]
 [ext_resource type="Texture2D" uid="uid://bxj1adg58trq1" path="res://art/Terrain/Bridge/Bridge_All.png" id="1_sv52t"]
@@ -7,13 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://c4sd48o6cyqqe" path="res://art/Terrain/Ground/Tilemap_Elevation.png" id="3_qgoyv"]
 [ext_resource type="PackedScene" uid="uid://bg15nc54ifsqb" path="res://scenes/prefabs/explosion.tscn" id="3_y0acb"]
 [ext_resource type="Texture2D" uid="uid://dtox6saxvcx4h" path="res://art/Terrain/Ground/Shadows.png" id="4_px1c8"]
-[ext_resource type="Texture2D" uid="uid://qu3fuxrydcw5" path="res://art/Resources/Gold Mine/GoldMine_Inactive.png" id="4_u81e1"]
-[ext_resource type="Texture2D" uid="uid://ktqj1uvxiixb" path="res://art/Resources/Gold Mine/GoldMine_Active.png" id="5_b6bv0"]
 [ext_resource type="Texture2D" uid="uid://by2ul3v4fc5cp" path="res://art/Terrain/Water/Water.png" id="5_xgklb"]
 [ext_resource type="Texture2D" uid="uid://cco5omsw6tyki" path="res://art/Factions/Goblins/Buildings/Wood_House/Goblin_House.png" id="6_ubwgw"]
 [ext_resource type="Texture2D" uid="uid://ddgv03gfhtmbt" path="res://art/Factions/Goblins/Buildings/Wood_House/Goblin_House_Destroyed.png" id="7_vkq25"]
 [ext_resource type="PackedScene" uid="uid://sxv5exaf84ng" path="res://scenes/prefabs/wood_tower.tscn" id="8_vkq25"]
-[ext_resource type="Texture2D" uid="uid://ba3825nwkj7i5" path="res://art/Resources/Resources/G_Idle.png" id="9_7lrji"]
 [ext_resource type="Texture2D" uid="uid://c6sgyc4474v1q" path="res://art/Resources/Resources/M_Idle.png" id="10_rssyh"]
 [ext_resource type="Texture2D" uid="uid://6cc53pavpg2d" path="res://art/Resources/Resources/W_Idle.png" id="11_hwp66"]
 [ext_resource type="Texture2D" uid="uid://dembu8ly1cyvw" path="res://art/Deco/17.png" id="17_ysjpo"]
@@ -24,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://blq46ux44g53s" path="res://art/Deco/08.png" id="22_x5gqu"]
 [ext_resource type="Texture2D" uid="uid://dw5jfuucrkotr" path="res://art/Factions/Knights/Buildings/Castle/Castle_Blue.png" id="23_8qayg"]
 [ext_resource type="Texture2D" uid="uid://dj55nljuixhkh" path="res://art/Factions/Knights/Buildings/House/House_Blue.png" id="24_gvp5n"]
+[ext_resource type="PackedScene" uid="uid://tgriee7anxly" path="res://scenes/prefabs/gold_mine.tscn" id="24_im81g"]
 [ext_resource type="Texture2D" uid="uid://b03wyp8qpopxf" path="res://art/Factions/Knights/Buildings/Tower/Tower_Blue.png" id="25_oix75"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5wre2"]
@@ -744,14 +742,6 @@ scale = Vector2(0.59375, 0.59375)
 [node name="Explosion" parent="." instance=ExtResource("3_y0acb")]
 position = Vector2(552, 278)
 
-[node name="GoldMineInactive" type="Sprite2D" parent="."]
-position = Vector2(149, 415)
-texture = ExtResource("4_u81e1")
-
-[node name="GoldMineActive" type="Sprite2D" parent="."]
-position = Vector2(794, 116)
-texture = ExtResource("5_b6bv0")
-
 [node name="GoblinHouse" type="Sprite2D" parent="."]
 position = Vector2(359, 563)
 texture = ExtResource("6_ubwgw")
@@ -765,18 +755,6 @@ position = Vector2(373, 330)
 
 [node name="WoodTower2" parent="." instance=ExtResource("8_vkq25")]
 position = Vector2(511, 88)
-
-[node name="GIdle" type="Sprite2D" parent="."]
-position = Vector2(734, 162)
-texture = ExtResource("9_7lrji")
-
-[node name="GIdle2" type="Sprite2D" parent="."]
-position = Vector2(866, 163)
-texture = ExtResource("9_7lrji")
-
-[node name="GIdle3" type="Sprite2D" parent="."]
-position = Vector2(819, 168)
-texture = ExtResource("9_7lrji")
 
 [node name="MIdle" type="Sprite2D" parent="."]
 position = Vector2(367, 266)
@@ -846,3 +824,12 @@ position = Vector2(584, 816)
 [node name="Fire5" parent="." instance=ExtResource("2_2vj2h")]
 z_index = 2
 position = Vector2(544, 728)
+
+[node name="GoldMine" parent="." instance=ExtResource("24_im81g")]
+position = Vector2(167, 443)
+
+[node name="GoldMine2" parent="." instance=ExtResource("24_im81g")]
+position = Vector2(802, 120)
+
+[node name="GoldMine3" parent="." instance=ExtResource("24_im81g")]
+position = Vector2(1455, 329)
