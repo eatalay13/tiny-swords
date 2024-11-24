@@ -20,8 +20,8 @@
 [ext_resource type="Texture2D" uid="uid://bul6vvs5h02qi" path="res://art/Deco/09.png" id="21_ygu70"]
 [ext_resource type="Texture2D" uid="uid://blq46ux44g53s" path="res://art/Deco/08.png" id="22_x5gqu"]
 [ext_resource type="Texture2D" uid="uid://dw5jfuucrkotr" path="res://art/Factions/Knights/Buildings/Castle/Castle_Blue.png" id="23_8qayg"]
+[ext_resource type="PackedScene" uid="uid://bxrtjcvmyfpp" path="res://scenes/prefabs/gold_mine.tscn" id="23_ykry0"]
 [ext_resource type="Texture2D" uid="uid://dj55nljuixhkh" path="res://art/Factions/Knights/Buildings/House/House_Blue.png" id="24_gvp5n"]
-[ext_resource type="PackedScene" uid="uid://tgriee7anxly" path="res://scenes/prefabs/gold_mine.tscn" id="24_im81g"]
 [ext_resource type="Texture2D" uid="uid://b03wyp8qpopxf" path="res://art/Factions/Knights/Buildings/Tower/Tower_Blue.png" id="25_oix75"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5wre2"]
@@ -825,11 +825,8 @@ position = Vector2(584, 816)
 z_index = 2
 position = Vector2(544, 728)
 
-[node name="GoldMine" parent="." instance=ExtResource("24_im81g")]
-position = Vector2(167, 443)
+[node name="GoldMine4" parent="." instance=ExtResource("23_ykry0")]
+position = Vector2(1196, 306)
 
-[node name="GoldMine2" parent="." instance=ExtResource("24_im81g")]
-position = Vector2(802, 120)
-
-[node name="GoldMine3" parent="." instance=ExtResource("24_im81g")]
-position = Vector2(1455, 329)
+[node name="GoldMine5" parent="." instance=ExtResource("23_ykry0")]
+position = Vector2(819, 127)

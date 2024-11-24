@@ -44,12 +44,6 @@ public partial class GoldMine : Sprite2D
         IsActive = true;
     }
 
-    private void Reset()
-    {
-        _isActive = true;
-        _goldSpawnCounter = 0;
-    }
-
     private void FullCapacity()
     {
         IsActive = false;
