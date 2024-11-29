@@ -14,7 +14,6 @@ public partial class GoldMine : Sprite2D
     private bool _isActive = true;
 
     private int _goldSpawnStartPosition = -72;
-    
     private byte _goldSpawnCounter;
     private byte _goldSpawnRateMax = 5;
 
@@ -52,8 +51,7 @@ public partial class GoldMine : Sprite2D
 
     private void SpawnGold()
     {
-        if (!IsActive)
-            return;
+        if (!IsActive) return;
 
         var gold = _goldScene.Instantiate<Gold>();
         GetParent().AddChild(gold);

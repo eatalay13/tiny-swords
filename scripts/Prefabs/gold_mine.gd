@@ -17,10 +17,8 @@ var is_active: bool = false:
 		else:
 			texture = gold_mine_in_active
 			$GSpawnTimer.stop()
-	
 
 var _goldSpawnStartPosition: int = -72
-
 var _goldSpawnCounter:int = 0
 var _goldSpawnRateMax:int = 8
 

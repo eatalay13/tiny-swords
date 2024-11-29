@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://bjigppl2u6bsr"]
+[gd_scene load_steps=32 format=4 uid="uid://bjigppl2u6bsr"]
 
 [ext_resource type="PackedScene" uid="uid://v782qpxpcrkl" path="res://scenes/prefabs/tree.tscn" id="1_72ix8"]
 [ext_resource type="Texture2D" uid="uid://bxj1adg58trq1" path="res://art/Terrain/Bridge/Bridge_All.png" id="1_sv52t"]
@@ -20,9 +20,11 @@
 [ext_resource type="Texture2D" uid="uid://bul6vvs5h02qi" path="res://art/Deco/09.png" id="21_ygu70"]
 [ext_resource type="Texture2D" uid="uid://blq46ux44g53s" path="res://art/Deco/08.png" id="22_x5gqu"]
 [ext_resource type="Texture2D" uid="uid://dw5jfuucrkotr" path="res://art/Factions/Knights/Buildings/Castle/Castle_Blue.png" id="23_8qayg"]
-[ext_resource type="PackedScene" uid="uid://bxrtjcvmyfpp" path="res://scenes/prefabs/gold_mine.tscn" id="23_ykry0"]
+[ext_resource type="PackedScene" uid="uid://tgriee7anxly" path="res://scenes/prefabs/gold_mine.tscn" id="23_ykry0"]
 [ext_resource type="Texture2D" uid="uid://dj55nljuixhkh" path="res://art/Factions/Knights/Buildings/House/House_Blue.png" id="24_gvp5n"]
+[ext_resource type="PackedScene" uid="uid://0e4po12d07ig" path="res://scenes/prefabs/archer.tscn" id="24_im81g"]
 [ext_resource type="Texture2D" uid="uid://b03wyp8qpopxf" path="res://art/Factions/Knights/Buildings/Tower/Tower_Blue.png" id="25_oix75"]
+[ext_resource type="PackedScene" uid="uid://1ttadf8l8pre" path="res://scenes/prefabs/warrior.tscn" id="25_ysjpo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5wre2"]
 texture = ExtResource("1_sv52t")
@@ -732,10 +734,11 @@ z_index = 1
 position = Vector2(598, 237)
 
 [node name="Tree3" parent="." instance=ExtResource("1_72ix8")]
-z_index = 1
+z_index = 2
 position = Vector2(313, 112)
 
 [node name="Fire" parent="." instance=ExtResource("2_2vj2h")]
+z_index = 1
 position = Vector2(361, 156)
 scale = Vector2(0.59375, 0.59375)
 
@@ -761,7 +764,7 @@ position = Vector2(367, 266)
 texture = ExtResource("10_rssyh")
 
 [node name="WIdle" type="Sprite2D" parent="."]
-position = Vector2(438, 395)
+position = Vector2(365, 158)
 texture = ExtResource("11_hwp66")
 
 [node name="17" type="Sprite2D" parent="."]
@@ -830,3 +833,18 @@ position = Vector2(1196, 306)
 
 [node name="GoldMine5" parent="." instance=ExtResource("23_ykry0")]
 position = Vector2(819, 127)
+
+[node name="Archer" parent="." instance=ExtResource("24_im81g")]
+position = Vector2(167, 743)
+
+[node name="Archer2" parent="." instance=ExtResource("24_im81g")]
+position = Vector2(952, 395)
+
+[node name="Archer3" parent="." instance=ExtResource("24_im81g")]
+position = Vector2(757, 397)
+
+[node name="Warrior" parent="." instance=ExtResource("25_ysjpo")]
+position = Vector2(791, 595)
+
+[node name="Warrior2" parent="." instance=ExtResource("25_ysjpo")]
+position = Vector2(921, 594)
